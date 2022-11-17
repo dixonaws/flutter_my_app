@@ -9,7 +9,7 @@ frontend:
         - tar xf flutter_linux_3.3.8-stable.tar.xz
     build:
       commands:
-        - flutter build web
+        - flutter/bin/flutter build web
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: build/web
