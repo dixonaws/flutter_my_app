@@ -5,12 +5,6 @@ frontend:
     preBuild:
       commands:
         - ls -lah
-        - curl --version
-        - file --version
-        - git --version
-        - unzip --version
-        - xz-utils --version
-        - zip --version
         - curl https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.3.8-stable.tar.xz
         - tar xf flutter_linux_3.3.8-stable.tar.xz
     build:
