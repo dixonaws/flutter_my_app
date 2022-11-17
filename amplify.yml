@@ -4,6 +4,7 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
+        - ls -lah
         - curl --version
         - file --version
         - git --version
@@ -20,5 +21,3 @@ frontend:
     baseDirectory: build/web
     files:
       - '**/*'
-  cache:
-    paths: []
